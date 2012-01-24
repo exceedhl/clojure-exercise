@@ -1,5 +1,7 @@
 (ns MarsRover.core)
 
+(defrecord Rover [x y direction])
+
 (def action-matrix
   ^{:private true}
   {:N {:left :W :right :E :dx 0 :dy 1}
